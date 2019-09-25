@@ -7,7 +7,7 @@
     <title><?php echo $title ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/img/logo/kemenkes.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/img/logo/KabJayapura.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/css/font-awesome.min.css">
@@ -34,11 +34,11 @@
         <div class="left-sidebar-pro">
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <a href="<?php echo base_url()?>Home/beranda/1"><img src="<?php echo base_url()?>assets/img/message/1.png" alt="" />
+                    <a href="<?php echo base_url()?>home"><img src="<?php echo base_url()?>assets/img/message/users.png" alt="" />
                     </a>
-                    <h3 class="uppercase">SIM POLIKLINIK </h3>
-                    <p><?php echo $this->session->userdata('nik') ?></p>
-                    <strong>SI+</strong>
+                    <h3 class="uppercase">SIM Surat </h3>
+                    <p>Administrator</p>
+                    <strong>AMS</strong>
                 </div>
                 <?php $this->load->view('menu_level') ?>
             </nav>

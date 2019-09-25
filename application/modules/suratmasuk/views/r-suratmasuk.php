@@ -56,6 +56,7 @@
                                         <th data-field="tgl_surat">Tgl surat</th>
                                         <th data-field="tgl_surat">Tgl diterima</th>
                                         <th data-field="keterangan">keterangan</th>
+                                        <th data-field="file">File</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -71,6 +72,7 @@
                                     <td><?php echo $item->tgl_surat ?></td>
                                     <td><?php echo $item->tgl_diterima ?></td>
                                     <td><?php echo $item->ket_suratmasuk ?></td>
+                                    <td><a href="<?php echo base_url()?>galeri/surat_masuk/<?php echo $item->file_path ?>" target="_blank"><img src="<?php echo base_url()?>assets/img/logo/file.png" width="25px"></img></a></td>
                                     <td>
                                       <a href="#" type="button" class="btn btn-custon-three btn-primary btn-xs" ><i class="fa fa-edit"></i></a>
                                       <a href="#" type="button" title="Hapus" onclick="return confirm('Hapus item ini Dari Database ?')" class="btn btn-custon-three btn-danger btn-xs"><i class="fa fa-trash"></i></a>
