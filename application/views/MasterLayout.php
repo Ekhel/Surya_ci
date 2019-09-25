@@ -65,7 +65,7 @@
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">API <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
                                             <div role="menu" class="dropdown-menu animated flipInX">
                                                 <a href="<?php echo base_url()?>Api/Dokumentasi" class="dropdown-item">Dokumentasi API </a>
-                                                
+
                                             </div>
                                         </li>
 
@@ -265,7 +265,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-copy-right">
-                        <p>Copyright &#169; 2019 Poliklinik RSUD BIAK</a></p>
+                        <p>Copyright &#169; 2019 BAPPEDA KAB. JAYAPURA</a></p>
                     </div>
                 </div>
             </div>
