@@ -29,4 +29,4 @@
   - Tambahkan Level & User Control [Solved]
   - Menambahkan Tb surat masuk [Solved]
   - Menambahkan Modul Surat Masuk [Solved]
-  - Menambahkan Fungsi CRUD Surat Masuk [Not Solved]
+  - Menambahkan Fungsi CRUD Surat Masuk [Solved]

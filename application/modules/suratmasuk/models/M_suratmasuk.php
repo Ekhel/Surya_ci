@@ -34,4 +34,8 @@ class M_suratmasuk extends CI_Model {
       $kodetampil = "BSM"."5".$tgl.$batas;
       return $kodetampil;
   }
+  function delete_suratmasuk($where = 0)
+  {
+    $this->db->delete('tb_suratmasuk', array('id_suratmasuk' => $where));
+  }
 }
