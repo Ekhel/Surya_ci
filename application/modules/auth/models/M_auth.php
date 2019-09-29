@@ -15,6 +15,9 @@ class M_auth extends CI_Model {
 	}
 	//untuk mendapatkan data admin yg login
 	function getAdmin($user, $sandi){
-		return $query = $this->db->get_where($this->table, array('nama' => $user, 'sandi' => $sandi, 'status' => 'aktif'), 1, 0)->row();
+		return $query = $this->db->get_where($this->table, array(
+			'nama' => $user,
+			'sandi' => $sandi,
+			'status' => 'aktif'), 1, 0)->row();
 	}
 }

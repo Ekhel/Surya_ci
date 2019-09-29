@@ -74,6 +74,7 @@
                                     <td><?php echo $item->ket_suratmasuk ?></td>
                                     <td><a href="<?php echo base_url()?>galeri/surat_masuk/<?php echo $item->file_path ?>" target="_blank"><img src="<?php echo base_url()?>assets/img/logo/file.png" width="25px"></img></a></td>
                                     <td>
+                                      <a href="<?php echo base_url()?>disposisi/dispo_suratmasuk/<?php echo $item->id_suratmasuk ?>" type="button" title="Disposisi" class="btn btn-custon-three btn-danger btn-xs"><i class="fa fa-list"></i></a>
                                       <a href="<?php echo base_url()?>suratmasuk/update_suratmasuk/<?php echo $item->id_suratmasuk ?>" type="button" class="btn btn-custon-three btn-primary btn-xs" ><i class="fa fa-edit"></i></a>
                                       <a href="<?php echo base_url()?>suratmasuk/delete_suratmasuk/<?php echo $item->id_suratmasuk ?>" type="button" title="Hapus" class="btn btn-custon-three btn-danger btn-xs"><i class="fa fa-trash"></i></a>
                                     </td>

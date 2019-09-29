@@ -27,6 +27,7 @@ class auth extends MX_Controller{
 				$data['sandi'] = $sandi;
 				$data['id_admin'] = $admin->id_admin;
 				$data['level'] = $admin->level;
+        $data['id_user'] = $admin->id_user;
 				$data['nama_lengkap'] = $admin->nama_lengkap;
 				$data['login'] = TRUE;
 				$this->session->set_userdata($data);

@@ -30,3 +30,9 @@
   - Menambahkan Tb surat masuk [Solved]
   - Menambahkan Modul Surat Masuk [Solved]
   - Menambahkan Fungsi CRUD Surat Masuk [Solved]
+
+* Minggu 29 September 2019
+  - Menambahkan Tb disposisi [Solved]
+  - Menambahkan Modul disposisi [Solved]
+  - Menambahkan fungsi CRUD Disposisi [Solved]
+  - Menambahkan fungsi Print Disposisi [Solved]
