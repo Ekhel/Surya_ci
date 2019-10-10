@@ -36,3 +36,7 @@
   - Menambahkan Modul disposisi [Solved]
   - Menambahkan fungsi CRUD Disposisi [Solved]
   - Menambahkan fungsi Print Disposisi [Solved]
+
+* Kamis 10 Oktober 2019
+  - Menambahkan Modul Surat Keluar [Solved]
+  - Menambahkan tb surat keluar [Solved]
