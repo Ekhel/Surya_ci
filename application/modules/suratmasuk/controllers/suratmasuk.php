@@ -18,7 +18,7 @@ class suratmasuk extends MX_Controller {
   public function create_suratmasuk()
   {
     $data['title'] = 'Tambah Surat Masuk';
-    $data['kode'] = $this->M_suratmasuk->kode();
+    //$data['kode'] = $this->M_suratmasuk->kode();
     $this->template->load('MasterLayout','c-suratmasuk',$data);
   }
   public function create_suratmasuk_proses()
@@ -48,12 +48,14 @@ class suratmasuk extends MX_Controller {
 			$file_path = $this->upload->file_name;
 
       $data = array(
-        'kode' => $this->input->post('kode'),
+        'no_agenda' => $this->input->post('no_agenda'),
+        'no_surat'  => $this->input->post('no_surat'),
         'asal_surat' => $this->input->post('asal_surat'),
-        'isi_suratmasuk' => $this->input->post('isi_suratmasuk'),
+        'perihal' => $this->input->post('perihal'),
+        'sifat'   => $this->input->post('sifat'),
+        'lampiran'  => $this->input->post('lampiran'),
         'tgl_surat' => $this->input->post('tgl_surat'),
         'tgl_diterima' => $this->input->post('tgl_diterima'),
-        'ket_suratmasuk' => $this->input->post('ket_suratmasuk'),
         'file_path' => $file_path,
       );
 

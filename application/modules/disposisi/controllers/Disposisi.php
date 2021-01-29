@@ -13,27 +13,26 @@ class disposisi extends MX_Controller {
   {
     $data['title'] = 'Disposisi Surat Masuk';
     $data['disposisi'] = $this->M_disposisi->disposisi($id_suratmasuk);
+    $data['jabatan'] = $this->M_disposisi->jabatan();
     $data['suratmasuk'] = $this->db->get_where('tb_suratmasuk', ['id_suratmasuk' => $id_suratmasuk])->row_array();
     $this->template->load('MasterLayout','r-disposisi',$data);
   }
   public function create_disposisi_proses()
   {
     $id_suratmasuk = $this->input->post('id_suratmasuk');
-    $tujuan = $this->input->post('tujuan');
-    $isi_disposisi = $this->input->post('isi_disposisi');
-    $sifat = $this->input->post('sifat');
-    $batas_waktu = $this->input->post('batas_waktu');
-    $catatan = $this->input->post('catatan');
-    $user = $this->input->post('user');
+    $id_jabatan = $this->input->post('id_jabatan');
+    $tgl_teruskan = $this->input->post('tgl_teruskan');
+    $arahan = $this->input->post('arahan');
+    $keterangan = $this->input->post('keterangan');
+    $date_created = $this->input->post('date_created');
 
     $data = array(
       'id_suratmasuk'   => $id_suratmasuk,
-      'tujuan'          => $tujuan,
-      'isi_disposisi'   => $isi_disposisi,
-      'sifat'           => $sifat,
-      'batas_waktu'     => $batas_waktu,
-      'catatan'         => $catatan,
-      'user'            => $user
+      'id_jabatan'      => $id_jabatan,
+      'tgl_teruskan'    => $tgl_teruskan,
+      'arahan'          => $arahan,
+      'keterangan'      => $keterangan,
+      'date_created'    => $date_created
     );
 
     $this->M_disposisi->create_disposisi($data);
@@ -111,6 +110,6 @@ class disposisi extends MX_Controller {
   {
     $data['title'] = 'Cetak Disposisi';
     $data['detail'] = $this->M_disposisi->print_disposisi($id_disposisi);
-    $this->load->view('disposisi/p-disposisi',$data);
+    $this->load->view('disposisi/cetak-disposisi',$data);
   }
 }

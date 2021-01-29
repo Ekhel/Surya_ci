@@ -44,93 +44,121 @@
                         <div class="col-lg-12">
                             <div class="all-form-element-inner">
                                 <form action="<?php echo base_url()?>suratmasuk/create_suratmasuk_proses" method="post" enctype="multipart/form-data">
-                                   <div class="form-group-inner">
-                                    <div class="row">
-                                        <div class="col-lg-2">
-                                            <label class="login2 pull-right pull-right-pro">Kode</label>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <input name="kode" type="text" value="<?php echo $kode ?>" readonly="true" class="form-control" />
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">No. Agenda</label>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <input name="no_agenda" type="text" class="form-control" />
+                                            </div>
                                         </div>
                                     </div>
-                                  </div>
-                                  <div class="form-group-inner">
-                                   <div class="row">
-                                       <div class="col-lg-2">
-                                           <label class="login2 pull-right pull-right-pro">Asal Surat</label>
-                                       </div>
-                                       <div class="col-lg-9">
-                                           <input name="asal_surat" type="text" class="form-control" />
-                                       </div>
-                                   </div>
-                                 </div>
-                                 <div class="form-group-inner">
-                                  <div class="row">
-                                      <div class="col-lg-2">
-                                          <label class="login2 pull-right pull-right-pro">Isi Surat</label>
-                                      </div>
-                                      <div class="col-lg-9">
-                                          <input name="isi_suratmasuk" type="text" class="form-control" />
-                                      </div>
-                                  </div>
-                                 </div>
-                                 <div class="form-group-inner">
-                                  <div class="row">
-                                      <div class="col-lg-2">
-                                          <label class="login2 pull-right pull-right-pro">Tgl Surat</label>
-                                      </div>
-                                      <div class="col-lg-4">
-                                          <input name="tgl_surat" type="date" class="form-control" />
-                                      </div>
-                                  </div>
-                                 </div>
-                                 <div class="form-group-inner">
-                                  <div class="row">
-                                      <div class="col-lg-2">
-                                          <label class="login2 pull-right pull-right-pro">Tgl Diterima</label>
-                                      </div>
-                                      <div class="col-lg-4">
-                                          <input name="tgl_diterima" type="date" class="form-control" />
-                                      </div>
-                                  </div>
-                                 </div>
-                                 <div class="form-group-inner">
-                                  <div class="row">
-                                      <div class="col-lg-2">
-                                          <label class="login2 pull-right pull-right-pro">Keterangan</label>
-                                      </div>
-                                      <div class="col-lg-9">
-                                          <textarea name="ket_suratmasuk" rows="8" cols="80" class="form-control"></textarea>
-                                      </div>
-                                  </div>
-                                 </div>
-                                 <div class="form-group-inner">
-                                  <div class="row">
-                                      <div class="col-lg-2">
-                                          <label class="login2 pull-right pull-right-pro">File</label>
-                                      </div>
-                                      <div class="col-lg-9">
-                                          <input name="file_path" type="file" class="form-control" />
-                                      </div>
-                                  </div>
-                                 </div>
-                                  <div class="form-group-inner">
-                                   <div class="row">
-                                     <div class="col-lg-2">
-                                     </div>
-                                     <div class="col-lg-2">
-                                       <input type="submit" class="btn btn-primary" value="Simpan">
-                                     </div>
-                                   </div>
-                                 </div>
-                          </form>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">No. Surat</label>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <input name="no_surat" type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">Asal Surat</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input name="asal_surat" type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">perihal</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input name="perihal" type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">Sifat</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <select name="sifat" class="form-control">
+                                                    <option value="Undagan">Undangan</option>
+                                                    <option value="Biasa">Biasa</option>
+                                                    <option value="Penting">Penting</option>
+                                                    <option value="Rahasia">Rahasia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">Lampiran</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <select name="lampiran" class="form-control">
+                                                    <option value="Ada">Ada</option>
+                                                    <option value="Tidak Ada">Tidak Ada</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">Tgl Surat</label>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <input name="tgl_surat" type="date" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">Tgl Diterima</label>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <input name="tgl_diterima" type="date" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <label class="login2 pull-right pull-right-pro">File</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input name="file_path" type="file" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-inner">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <input type="submit" class="btn btn-primary" value="Simpan">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
   </div>
 </div>
 

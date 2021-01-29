@@ -51,11 +51,10 @@
                                 <thead>
                                     <tr>
                                         <th data-field="no">No</th>
+                                        <th data-field="No Surat">No. Surat</th>
                                         <th data-field="asal"> Asal Surat</th>
                                         <th data-field="perihal">Perihal</th>
                                         <th data-field="tgl_surat">Tgl surat</th>
-                                        <th data-field="tgl_surat">Tgl diterima</th>
-                                        <th data-field="keterangan">keterangan</th>
                                         <th data-field="file">File</th>
                                         <th></th>
                                     </tr>
@@ -66,12 +65,11 @@
                                   foreach($surat as $item){
                                   ?>
                                   <tr>
-                                    <td><?php echo $item->kode ?></td>
+                                    <td><?php echo $item->no_agenda ?></td>
+                                    <td><?php echo $item->no_surat ?></td>
                                     <td><?php echo $item->asal_surat ?></td>
-                                    <td><?php echo $item->isi_suratmasuk ?></td>
+                                    <td><?php echo $item->perihal ?></td>
                                     <td><?php echo $item->tgl_surat ?></td>
-                                    <td><?php echo $item->tgl_diterima ?></td>
-                                    <td><?php echo $item->ket_suratmasuk ?></td>
                                     <td><a href="<?php echo base_url()?>galeri/surat_masuk/<?php echo $item->file_path ?>" target="_blank"><img src="<?php echo base_url()?>assets/img/logo/file.png" width="25px"></img></a></td>
                                     <td>
                                       <a href="<?php echo base_url()?>disposisi/dispo_suratmasuk/<?php echo $item->id_suratmasuk ?>" type="button" title="Disposisi" class="btn btn-custon-three btn-danger btn-xs"><i class="fa fa-list"></i></a>

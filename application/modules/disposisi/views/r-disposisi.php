@@ -44,11 +44,8 @@
                                 <thead>
                                     <tr class="small">
                                         <th>No</th>
-                                        <th>Tujuan</th>
-                                        <th>Isi Dispo</th>
-                                        <th>Sifat</th>
-                                        <th>Batas Waktu</th>
-                                        <th>Catatan</th>
+                                        <th>Kepada</th>
+                                        <th>Arahan</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -59,21 +56,11 @@
                                   ?>
                                     <tr class="small">
                                       <td><?php echo $no++ ?></td>
-                                      <td><?php echo $item->tujuan ?></td>
-                                      <td><?php echo $item->isi_disposisi ?></td>
-                                      <td><?php echo $item->sifat ?></td>
-                                      <td><?php echo $item->batas_waktu ?></td>
-                                      <td><?php echo $item->catatan ?></td>
+                                      <td><?php echo $item->jabatan ?> / <?php echo $item->keterangan ?></td>
+                                      <td><?php echo $item->arahan ?> </td>
                                       <td>
                                         <a href="#modalupdate" data-toggle="modal" type="button" class="btn btn-custon-three btn-primary btn-xs" onclick="update(
-                                            '<?php echo $item->id_disposisi ?>',
-                                            '<?php echo $item->id_suratmasuk ?>',
-                                            '<?php echo $item->tujuan ?>',
-                                            '<?php echo $item->isi_disposisi ?>',
-                                            '<?php echo $item->sifat ?>',
-                                            '<?php echo $item->batas_waktu ?>',
-                                            '<?php echo $item->catatan ?>',
-                                            '<?php echo $item->user ?>'
+                                            '<?php echo $item->id_disposisi ?>'
                                           )"><i class="fa fa-edit"></i></a>
                                         <a href="<?php echo base_url()?>disposisi/delete_disposisi/<?php echo $item->id_disposisi ?>" type="button" title="Hapus" class="btn btn-custon-three btn-danger btn-xs"><i class="fa fa-trash"></i></a>
                                         <a href="<?php echo base_url()?>disposisi/print_disposisi/<?php echo $item->id_disposisi ?>" type="button" title="Cetak Disposisi" class="btn btn-custon-three btn-default btn-xs" target="_blank"><i class="fa fa-print"></i></a>

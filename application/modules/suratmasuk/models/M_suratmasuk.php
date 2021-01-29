@@ -7,15 +7,18 @@ class M_suratmasuk extends CI_Model {
     $query = $this->db->query("SELECT * FROM tb_suratmasuk");
     return $query->result();
   }
+
   function create_suratmasuk($data)
   {
     $this->db->insert('tb_suratmasuk',$data);
   }
+
   function update_suratmasuk($where,$data,$table)
   {
     $this->db->where($where);
     $this->db->update($table,$data);
   }
+
   function kode()
   {
     $this->db->select('RIGHT(tb_suratmasuk.kode,2) as kode', FALSE);
@@ -34,8 +37,10 @@ class M_suratmasuk extends CI_Model {
       $kodetampil = "BSM"."5".$tgl.$batas;
       return $kodetampil;
   }
+
   function delete_suratmasuk($where = 0)
   {
     $this->db->delete('tb_suratmasuk', array('id_suratmasuk' => $where));
   }
+  
 }
